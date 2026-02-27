@@ -1,4 +1,4 @@
-# 📚 ProjectNest Help Desk Chatbot (RAG Powered)
+# 📚 ProjectNest Help Desk Chatbot (RAG Powered) https://rag-chatbot-appdesk-ycdetjgof2mzv78q7cooip.streamlit.app
 
 A professional AI-powered Help Desk Chatbot built using **LangChain, Groq LLM, FAISS, and Streamlit**.
 
