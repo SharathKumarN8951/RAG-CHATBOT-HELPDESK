@@ -41,7 +41,7 @@ def initialize_rag():
     chunks = split_documents(documents, CHUNK_SIZE, CHUNK_OVERLAP)
 
     embeddings = get_embeddings(EMBEDDING_MODEL)
-    vectorstore = create_vectorstore(chunks, embeddings)
+    vectorstore = create_vectorstore(chunks, embeddings, FAISS_INDEX_PATH)
     retriever = get_retriever(vectorstore, TOP_K)
 
     llm = get_llm(GROQ_MODEL)
@@ -83,4 +83,5 @@ if submitted and user_input:
 
     st.session_state.messages.append(
         {"role": "assistant", "content": response}
+
     )
