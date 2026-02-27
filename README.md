@@ -100,3 +100,62 @@ Create a .env file in root directory:
 GROQ_API_KEY=your_groq_api_key_here
 ▶️ Run Application
 python -m streamlit run app.py
+
+🎯 How It Works
+
+Loads all PDFs from documents/
+
+Splits into chunks
+
+Converts chunks into embeddings
+
+Stores embeddings in FAISS vector DB
+
+Retrieves relevant chunks based on user query
+
+Sends context + query to Groq LLM
+
+Displays structured answer
+
+🔐 Security
+
+API keys stored securely in .env
+
+No sensitive data exposed
+
+Strict prompt rules prevent unrelated queries
+
+📞 Contact
+
+Email: sharathnsharu@gmail.com
+
+WhatsApp: +91-8951663634
+Instagram: thinksphere_official
+
+Managed by @prajwal.cv_
+
+👨‍💼 Management
+
+CEO Team:
+
+PRAJWAL
+
+SHARATH KUMAR N
+
+RAKESH GN
+
+📌 Future Improvements
+
+Persistent Vector Storage
+
+Source Document Display
+
+Page Number References
+
+Admin Dashboard
+
+Deployment to Cloud
+
+⭐ If you like this project
+
+Give it a ⭐ on GitHub!
