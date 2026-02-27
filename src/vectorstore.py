@@ -1,22 +1,12 @@
-import os
 from langchain_community.vectorstores import FAISS
 
 
-def create_vectorstore(chunks, embeddings, index_path):
-    # If index already exists → load it
-    if os.path.exists(index_path):
-        print("Loading existing FAISS index...")
-        return FAISS.load_local(
-            index_path,
-            embeddings,
-            allow_dangerous_deserialization=True
-        )
-
-    # Else → create new and save
-    print("Creating new FAISS index...")
+def create_vectorstore(chunks, embeddings):
+    """
+    Create FAISS vectorstore in memory (non-persistent).
+    Suitable for Streamlit Cloud deployment.
+    """
     vectorstore = FAISS.from_documents(chunks, embeddings)
-    vectorstore.save_local(index_path)
-
     return vectorstore
 
 
