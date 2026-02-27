@@ -123,26 +123,7 @@ API keys stored securely in .env
 
 No sensitive data exposed
 
-Strict prompt rules prevent unrelated queries
 
-📞 Contact
-
-Email: sharathnsharu@gmail.com
-
-WhatsApp: +91-8951663634
-Instagram: thinksphere_official
-
-Managed by @prajwal.cv_
-
-👨‍💼 Management
-
-CEO Team:
-
-PRAJWAL
-
-SHARATH KUMAR N
-
-RAKESH GN
 
 📌 Future Improvements
 
