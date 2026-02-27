@@ -41,7 +41,7 @@ def initialize_rag():
     chunks = split_documents(documents, CHUNK_SIZE, CHUNK_OVERLAP)
 
     embeddings = get_embeddings(EMBEDDING_MODEL)
-    vectorstore = create_vectorstore(chunks, embeddings, FAISS_INDEX_PATH)
+    vectorstore = create_vectorstore(chunks, embeddings)
     retriever = get_retriever(vectorstore, TOP_K)
 
     llm = get_llm(GROQ_MODEL)
@@ -85,3 +85,4 @@ if submitted and user_input:
         {"role": "assistant", "content": response}
 
     )
+
