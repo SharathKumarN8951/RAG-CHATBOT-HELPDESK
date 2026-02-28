@@ -85,7 +85,7 @@ RAG-CHATBOT/
 
 ### 1️⃣ Clone Repository
 
-git clone https://github.com/your-username/projectnest-helpdesk.git
+git clone https://github.com/SharathKumarN8951/RAG-CHATBOT-HELPDESK
 cd projectnest-helpdesk`
 
 2️⃣ Create Virtual Environment
